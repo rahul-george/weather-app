@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Template Project</title>
-  </head>
-  <body></body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Template Project</title>
+    </head>
+    <body>
+        <div class="app">
+            <span class="switch-container">
+                F
+                <label class="switch">
+                    <input id="unit-input" type="checkbox" checked />
+                    <span class="slider round"></span>
+                </label>
+                C
+            </span>
+
+            <input id="city-search-text" type="text" placeholder="Enter City" />
+            <p id="error-message" class="hidden"></p>
+            <div
+                id="weather-card-container"
+                class="weather-card-container"
+            ></div>
+        </div>
+    </body>
 </html>
