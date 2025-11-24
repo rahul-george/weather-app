@@ -38,14 +38,14 @@ class App {
                 location: `${data["location"]["name"]}, ${data["location"]["country"]}`,
                 actual_temp:
                     this.unit === "C"
-                        ? current_weather["temp_c"]
-                        : current_weather["temp_f"],
+                        ? ` ${current_weather["temp_c"]} C`
+                        : ` ${current_weather["temp_f"]} F`,
                 feels_like:
                     this.unit === "C"
-                        ? current_weather["feelslike_c"]
-                        : current_weather["feelslike_f"],
-                wind_speed: current_weather["wind_kph"],
-                humidity: current_weather["humidity"],
+                        ? ` ${current_weather["feelslike_c"]} C`
+                        : ` ${current_weather["feelslike_f"]} F`,
+                wind_speed: `${current_weather["wind_kph"]} KPH`,
+                humidity: ` ${current_weather["humidity"]}`,
             };
         } else {
             throw new Error(data["error"]["message"]);
