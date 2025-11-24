@@ -27,7 +27,6 @@ class WeatherCard {
         const condition_row = document.createElement("span");
         condition_row.classList.add("condition");
         this.condition_img = document.createElement("img");
-        this.condition_img.src = src;
 
         this.condition_text = document.createElement("p");
         condition_row.appendChild(this.condition_img);
@@ -57,7 +56,7 @@ class WeatherCard {
         // Wind speed row
         const wind_speed_row = document.createElement("span");
         const wind_speed_label = document.createElement("p");
-        wind_speed_label.textContent = "Feels Like: ";
+        wind_speed_label.textContent = "Wind speed: ";
         this.wind_speed = document.createElement("p");
         this.wind_speed.classList.add("actual_temp");
         wind_speed_row.appendChild(wind_speed_label);
@@ -67,7 +66,7 @@ class WeatherCard {
         // Humidity row
         const humidity_row = document.createElement("span");
         const humidity_label = document.createElement("p");
-        humidity_label.textContent = "Feels Like: ";
+        humidity_label.textContent = "Humidity: ";
         this.humidity = document.createElement("p");
         this.humidity.classList.add("actual_temp");
         humidity_row.appendChild(humidity_label);
@@ -77,3 +76,5 @@ class WeatherCard {
         return this.card;
     }
 }
+
+export { WeatherCard };
