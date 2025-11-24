@@ -45,30 +45,30 @@ class WeatherCard {
 
         // Feels like row
         const feels_like_row = document.createElement("span");
+        feels_like_row.classList.add("feels_like");
         const feels_like_label = document.createElement("p");
         feels_like_label.textContent = "Feels Like: ";
         this.feels_like_temp = document.createElement("p");
-        this.feels_like_temp.classList.add("actual_temp");
         feels_like_row.appendChild(feels_like_label);
         feels_like_row.appendChild(this.feels_like_temp);
         this.card.appendChild(feels_like_row);
 
         // Wind speed row
         const wind_speed_row = document.createElement("span");
+        wind_speed_row.classList.add("windspeed");
         const wind_speed_label = document.createElement("p");
         wind_speed_label.textContent = "Wind speed: ";
         this.wind_speed = document.createElement("p");
-        this.wind_speed.classList.add("actual_temp");
         wind_speed_row.appendChild(wind_speed_label);
         wind_speed_row.appendChild(this.wind_speed);
         this.card.appendChild(wind_speed_row);
 
         // Humidity row
         const humidity_row = document.createElement("span");
+        humidity_row.classList.add("humidity");
         const humidity_label = document.createElement("p");
         humidity_label.textContent = "Humidity: ";
         this.humidity = document.createElement("p");
-        this.humidity.classList.add("actual_temp");
         humidity_row.appendChild(humidity_label);
         humidity_row.appendChild(this.humidity);
         this.card.appendChild(humidity_row);
