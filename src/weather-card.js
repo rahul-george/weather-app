@@ -3,15 +3,15 @@ import "./weather-card.css";
 class WeatherCard {
     constructor() {}
 
-    updateCard(
+    updateCard({
         icon,
         condition,
         location,
         actual_temp,
         feels_like,
         wind_speed,
-        humidity
-    ) {
+        humidity,
+    }) {
         this.condition_img.src = icon;
         this.condition_text.textContent = condition;
         this.location.textContent = location;
