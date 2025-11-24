@@ -71,6 +71,7 @@ class App {
     initializeUnitSelect() {
         this.unitElement.addEventListener("change", (e) => {
             this.setUnit(e.target.checked ? "C" : "F");
+            this.setCity("");
         });
     }
 
